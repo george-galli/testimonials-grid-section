@@ -1,0 +1,299 @@
+body, h1, h2, p, span {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: #ECF2F8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 50%;
+}
+
+
+/*GENERAL GRID*/
+
+.grid {
+  display: grid;
+  grid-template-columns:  minmax(150px, 255px) minmax(150px, 255px) minmax(150px, 255px) minmax(150px, 255px);
+  grid-template-areas: 
+  "card1 card1 card2 card3"
+  "card4 card5 card5 card3"
+  ;
+  padding: 165px;
+}
+
+.grid-gap {
+  gap: 20px 30px;
+}
+
+
+/*MOBILE*/
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 327px;
+    grid-template-areas: 
+      "card1"
+      "card2"
+      "card4"
+      "card5"
+      "card3"
+    ;
+    padding: 75px 25px;
+  }
+  .grid-gap {
+    gap: 30px 0px;
+  }
+}
+
+/*CARD1*/
+
+.card1 {
+  grid-area: card1;
+  background: #733FC8;
+  padding: 25px 32px 35px 25px;
+  position: relative;
+}
+
+.card1-name {
+  display: flex;
+}
+
+.card1-name h1 {
+  font-size: 13px;
+  color: white;
+  margin-left: 15px;
+}
+
+.card1-name span {
+  font-size: 11px;
+  color: white;
+  opacity: 50%;
+}
+
+.hasps {
+  position: absolute;
+  top: 0px;
+  right: 80px;
+  border-radius: 0%;
+}
+
+.subtitle1 h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  max-width: 476px;
+  position: absolute;
+  margin-top: 15px;
+}
+
+.subtitle1 p {
+  font-size: 13px;
+  line-height: 18px;
+  color: white;
+  opacity: 70%;
+  margin-top: 100px;
+}
+
+
+@media (max-width: 1237px) {
+  .subtitle1 p {
+    margin-top: 150px;
+  }
+}
+
+.subtitle h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 15px;
+}
+
+.subtitle p {
+  font-size: 13px;
+  line-height: 18px;
+  color: white;
+  opacity: 70%;
+  margin-top: 14px;
+}
+
+/*MOBILE*/
+
+@media (max-width: 600px) {
+  .card1 {
+    padding: 20px 30px 20px 30px;
+  }
+  .hasps {
+    right: 25px;
+  }
+  .subtitle1 h2 {
+    max-width: 263px;
+  }
+  .subtitle1 p {
+    max-width: 247px;
+  }
+}
+
+/*CARD2*/
+
+.card2 {
+  grid-area: card2;
+  background: hsl(217, 19%, 35%);
+  padding: 25px 32px 35px 25px;
+}
+
+.card2-name {
+  display: flex;
+}
+
+.card2-name h1 {
+  font-size: 13px;
+  color: white;
+  margin-left: 15px;
+}
+
+.card2-name span {
+  font-size: 11px;
+  color: white;
+  opacity: 50%;
+}
+
+/*CARD3*/
+
+.card3 {
+  grid-area: card3;
+  background: white;
+  padding: 25px 32px 35px 25px;
+}
+
+.card3-name {
+  display: flex;
+}
+
+.card3-name h1 {
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+  margin-left: 15px;
+}
+
+.card3-name span {
+  font-size: 11px;
+  color: hsl(217, 19%, 35%);
+  opacity: 50%;
+}
+
+
+.subtitle3 h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(217, 19%, 35%);
+  margin-top: 15px;
+
+}
+
+.subtitle3 p {
+  font-size: 13px;
+  line-height: 18px;
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+  margin-top: 15px;
+}
+
+/*CARD4*/
+
+.card4 {
+  grid-area: card4;
+  background:white;
+  padding: 25px 32px 35px 25px;
+}
+
+.card4-name {
+  display: flex;
+}
+
+.card4-name h1 {
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+  margin-left: 15px;
+}
+
+.card4-name span {
+  font-size: 11px;
+  color: hsl(217, 19%, 35%);
+  opacity: 50%;
+}
+
+.subtitle4 h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(217, 19%, 35%);
+  border: 1px solid white;
+  margin-top: 15px;
+}
+
+.subtitle4 p {
+  font-size: 13px;
+  line-height: 18px;
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+  margin-top: 15px;
+}
+
+/*CARD5*/
+
+.card5 {
+  grid-area: card5;
+  background: hsl(219, 29%, 14%);
+  padding: 25px 32px 35px 25px;
+}
+
+.card5-name {
+  display: flex;
+}
+
+.card5-name h1 {
+  font-size: 13px;
+  color: white;
+  margin-left: 15px;
+}
+
+.card5-name span {
+  font-size: 11px;
+  color: white;
+  opacity: 50%;
+}
+
+.subtitle5 h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 15px;
+}
+
+.subtitle5 p {
+  font-size: 13px;
+  line-height: 18px;
+  color: white;
+  opacity: 70%;
+  margin-top: 15px;
+}
+
+/*IMAGES*/
+
+.image {
+  width: 30px;
+  height: 30px;
+}
+
+.image-border {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #A775F1;
+}
